@@ -1,0 +1,86 @@
+.navbar{ 
+    background-color: #ffffff00;
+    max-height: 60px;
+}
+@media screen and (max-width: 1000px) {
+    .navbar,.container-fluid {
+        background-color: #ffffff;
+    }
+}
+.nav-link , .navbar-brand{ color: #3a5250; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{background-color: rgba(27, 28, 27, 0.067); color: #31aab8 }
+.navbar-toggler{  background:#fff !important;}
+.nav-link{ 
+    color:black;
+    font-size: 19px;
+    font-weight:bold;
+    font-family: 'lato';
+} 
+.jumbotron.jumbotron-fluid.hero_image{
+    color: white; 
+    background-image: url('https://images.unsplash.com/photo-1611659934318-06fd70ced53c?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80');
+    background-position: center;
+    background-size: cover;
+    height: 100vh
+}
+#footer{
+    position: absolute;
+    bottom: 100;
+    padding-top: 90px;
+    background-color: #495057;
+}
+.footer_font{
+    color:#e7eced; 
+    text-align: center; 
+    font-size:small;
+}
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    height: 2rem;
+    width: 2rem;
+    background-color: #495057;
+    color: #fff;
+    border-radius: 100%;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+  }
+.social-icon:hover {
+    background-color:#31aab8;
+    color:#fafafa;
+    border-color:#31aab8;
+  }
+  
+  .about::after{
+    font: bold 32px Poppins;
+    text-align: center;
+    content:"ABOUT";
+    border-bottom: 5px solid #31aab8;
+  }
+  .testimonials::after{
+    font: bold 32px Poppins;
+    text-align: center;
+    content:"TESTIMONIALS";
+    border-bottom: 5px solid #31aab8;
+  }
+  .card-img-top{
+      height:10rem;
+      width:10rem;
+      border-radius: 100%;  
+      margin-left: auto;
+      margin-right: auto;
+
+  }
+  #contact{
+    padding:100px;
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+  
