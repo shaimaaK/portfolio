@@ -9,14 +9,10 @@
         <link rel="stylesheet" type="text/css" href="./index.css">
         <script type="text/javascript" src='./index.js'></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Inter:b|Oxygen:b|Oldenburg|Assistant">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
         <title>Shaimaa Kouka</title>
         <link rel="icon" href="./images/logo.svg">
-
-
-        <style>
-           
-        </style> 
     </head>
     <body>
         <!------------------------------------------- NAV BAR  ------------------------------------------------>
@@ -33,7 +29,7 @@
                     <a class="nav-link active" aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#work">Work</a>
+                    <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#about">About</a>
@@ -63,7 +59,7 @@
             </div>
            <!------------------------------------------- WORK SECTION------------------------------------------------>
            
-          <div id="work" >
+          <div id="portfolio" >
             <h1 style="text-align: center;"></h1>
           </div>
           <!------------------------------------------- ABOUT SECTION------------------------------------------------>
@@ -79,8 +75,11 @@
                   Hello there stranger on the internet. this is where i introduce my self, and tell you more about me.Im Computer Engineer graduate with honors since 2020. i love working with people and connect minds to come up with unique products. My support system are open-source communities, visionary team members and leaders, spotify and as always coffee. I develop websites and Android application for client timely and with great prices.
               </div>
             </div>
-
-            <div class="row">
+          </div>
+          <hr>
+            <!------------------------------------------- TESTIMONIALS SECTION------------------------------------------------>
+          <div class="container" style="background-color: blueviolet;">
+            <div class="row" >
               <div class="col-12 testimonials d-flex justify-content-center"></div>
             </div>
             <div class="row">
@@ -112,9 +111,8 @@
                   </div>
                 </div>
               </div>
-          </div>
-
-          </div>  
+            </div> 
+          </div> 
           <!------------------------------------------- CONTACT SECTION------------------------------------------------>
           <div class="container-fluid" id="contact" >
             <div class="row">
@@ -149,31 +147,35 @@
           
 
           <!------------------------------------------- FOOTER SECTION------------------------------------------------>
-          <div class="container-fluid" id="footer">
-            <!------------------ [social media icons]---------------------------->
-            <div class="container">
-              <div class="d-flex justify-content-center">
-                <img src="images/logo_white.svg" height="80px" width="90px">
-                <span class="mx-4" style="font-family:Oldenburg;font-size: 35px;color:azure ; margin-top: auto;margin-bottom: auto;">Shaimaa Kouka</span>
-              </div>
-              <div class=" container d-flex justify-content-center mb-5">
-                <a href="mailto:shaimaakouka@gmail.com" target="_blank" class="social-icon"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/shaimaaK" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/shaimaa-kouka-7a1181204/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <!-- <a href="#" class="social-icon"><i class="fas fa-phone"></i></a> -->
-
+          <footer class="container-fluid" id="footer">
+            <div class="container my-4">
+             <!------------------------- [Row]------------------------------------->  
+              <div class="row d-flex justify-content-center align-items-baseline">
+                <!--------------------- [col 1 ]----------------------------> 
+                <div class="col-3  footer_font">
+                  <img src="./images/logo_white.svg" height="70px" width="80px">
+                  <h3>Shaimaa Kouka</h3>
+                </div>
+                <!--------------------- [col 2]------------------------------> 
+                <div class="col-3 footer_font">
+                  <h4>CONTACT</h4>
+                  <p class="mt-3"> <i class="bi bi-geo"></i>United Arab Emirates, Dubai <br>
+                   <i class="bi bi-telephone"></i> +971 567 619 400</p>
+                </div>
+                <!--------------------- [col 3]------------------------------> 
+                <div class="col-3 footer_font">
+                  <h4>SOCIAL MEDIA</h4>
+                  <div class=" container d-flex justify-content-center mt-3"> 
+                    <a href="mailto:shaimaakouka@gmail.com" target="_blank" class="social-icon mr-2"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/shaimaaK" target="_blank" class="social-icon mr-2"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shaimaa-kouka-7a1181204/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <!-- <a href="#" class="social-icon"><i class="fas fa-phone"></i></a> -->
+                  </div>
+                </div>
               </div>
             </div>
-            <hr style="border:1px solid white ; z-index:100; width:1110px">
-            <!------------------ [copyrights & privacy policy]---------------------------->
-            <div class="container d-flex justify-content-between">
-              <div class="footer_font">Copyright &copy; 2020 Shaimaa Kouka</div>
-              <div>
-                <a class="footer_font" href="#">Privacy Policy.</a>
-                <a class="footer_font" href="#">Terms & Conditions</a>
-              </div>
-          </div>
-          </div>
+            <div class="container footer_copyrights mb-2">Copyright &copy; 2021 <a href="#">Shaimaa Kouka</a></div>
+          </footer>
     </body>
 
 </html>
