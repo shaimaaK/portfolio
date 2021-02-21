@@ -18,6 +18,27 @@ $(document).ready(function(){
     }
   });
 });
+/////////////////////////////
+ $(document).ready(function() {
+    if($(window).width() < 975) {
+        $(".fixed-top").css("background-color", "#f8f8f8");
+    }
+    else{
+			$(".fixed-top").css("background-color", "transparent");
+		}
+});
+$(document).ready(function() {
+    // This will fire when document is ready:
+    $(window).resize(function() {
+        // This will fire each time the window is resized:
+        if($(window).width() < 975) {
+			$(".fixed-top").css("background-color", "#f8f8f8");
+		}
+		else{
+			$(".fixed-top").css("background-color", "transparent");
+		}
+    })
+});
 
 $(document).ready(function(){
 	$(window).scroll(function () {
