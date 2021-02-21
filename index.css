@@ -25,9 +25,9 @@
     background-size: cover;
     height: 100vh
 }
-
+/*--------------[ about ]--------------------*/
   .about{
-    margin-top:140px;
+    margin-top:90px;
     text-align:center;
   }
   .about::after{
@@ -36,12 +36,14 @@
     content:"ABOUT";
     border-bottom: 5px solid #31aab8;
   }
+  /*--------------[ testimonials ]--------------------*/
   .testimonials::after{
     font: bold 32px Poppins;
     text-align: center;
     content:"TESTIMONIALS";
     border-bottom: 5px solid #31aab8;
   }
+  
   .card-img-top{
       height:10rem;
       width:10rem;
