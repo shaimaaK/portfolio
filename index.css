@@ -25,10 +25,47 @@
     background-size: cover;
     height: 100vh
 }
+/*--------------[ scroll to top button ]--------------------*/
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  border-radius: 100%;
+  z-index: 100;
+}
+.back-to-top:hover{
+  border-color: rgb(49, 49, 49);
+}
+.mywork{
+  
+  height:310px;
+  background-image: url("./images/app1.png");
+  background-repeat:none;
+}
+/*--------------[ portfolio ]--------------------*/
+#portfolio{
+  z-index:-50;
+  padding:90px;
+}
+.portfolio{
+  text-align:center;
+  z-index:50;
+}
+.portfolio::after{
+  font: bold 32px Poppins;
+  text-align: center;
+  content:"PORTFOLIO";
+  border-bottom: 5px solid #31aab8;
+}
 /*--------------[ about ]--------------------*/
+  #about{
+  z-index:-50;
+  padding:90px;
+  }
   .about{
-    margin-top:90px;
     text-align:center;
+    z-index:50;
   }
   .about::after{
     font: bold 32px Poppins;
@@ -52,6 +89,7 @@
       margin-right: auto;
 
   }
+  /*--------------[ contact and portfolio ]--------------------*/
   #contact{
     padding:100px;
     background: #24C6DC;  /* fallback for old browsers */
