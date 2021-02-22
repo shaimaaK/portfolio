@@ -21,7 +21,7 @@ $(document).ready(function(){
 });
 /////////////[ set the color of navbar based on size of screen ON LOAD ]//////////////////// 
  $(document).ready(function() {
-    if($(window).width() < 975) {
+    if($(window).width() <= 991) {
         $(".fixed-top").css("background-color", "#f8f8f8");
     }
     else{
@@ -33,7 +33,7 @@ $(document).ready(function() {
     // This will fire when document is ready:
     $(window).resize(function() {
         // This will fire each time the window is resized:
-        if($(window).width() < 975) {
+        if($(window).width() <= 991) {
 			$(".fixed-top").css("background-color", "#f8f8f8");
 		}
 		else{
