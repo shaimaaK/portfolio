@@ -1,3 +1,4 @@
+/////////////[ resize the jumbotron to te size of the screen ]//////////////////// 
 $(".jumbotron").css({ height: $(window).height() + "px" });
 
 $(window).on("resize", function() {
@@ -8,7 +9,7 @@ $(".hover").mouseleave(
     $(this).removeClass("hover");
   }
 );
-
+/////////////[ set the color of navbar based on scroll ]//////////////////// 
 $(document).ready(function(){
   $(window).scroll(function() { // check if scroll event happened
     if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
@@ -18,7 +19,7 @@ $(document).ready(function(){
     }
   });
 });
-/////////////////////////////
+/////////////[ set the color of navbar based on size of screen ON LOAD ]//////////////////// 
  $(document).ready(function() {
     if($(window).width() < 975) {
         $(".fixed-top").css("background-color", "#f8f8f8");
@@ -27,6 +28,7 @@ $(document).ready(function(){
 			$(".fixed-top").css("background-color", "transparent");
 		}
 });
+/////////////[ set the color of navbar based on size of screen ON WINDOW RESIZE ]//////////////////// 
 $(document).ready(function() {
     // This will fire when document is ready:
     $(window).resize(function() {
@@ -40,6 +42,7 @@ $(document).ready(function() {
     })
 });
 
+/////////////[ back to top button appearance & functionality]//////////////////// 
 $(document).ready(function(){
 	$(window).scroll(function () {
 			if ($(document).scrollTop() > 50) {
