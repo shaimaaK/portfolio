@@ -1,14 +1,19 @@
 /////////////[ resize the jumbotron to te size of the screen ]//////////////////// 
-$(".jumbotron").css({ height: $(window).height() + "px" });
+$(document).ready(function(){
 
-$(window).on("resize", function() {
-  $(".jumbotron").css({ height: $(window).height() + "px" });
-});
-$(".hover").mouseleave(
-  function () {
-    $(this).removeClass("hover");
-  }
-);
+	$(".hero_image").css({ height: $(window).height() + "px" });
+	console.log('height is :'+$(window).height())
+
+	$(window).on("resize", function() {
+	$(".hero_image").css({ height: $(window).height() + "px" });
+	console.log('height is :'+$(window).height())
+	});
+	$(".hover").mouseleave(
+	function () {
+		$(this).removeClass("hover");
+	}
+	);
+})
 /////////////[ set the color of navbar based on scroll ]//////////////////// 
 $(document).ready(function(){
   $(window).scroll(function() { // check if scroll event happened
@@ -59,5 +64,3 @@ $(document).ready(function(){
 			return false;
 		});
 });
-
-

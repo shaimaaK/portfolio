@@ -9,6 +9,8 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="./index.css">
         <script type="text/javascript" src='./index.js'></script>
+        <meta name="viewport" content=" minimum-scale=1, width=device-width, initial-scale=1.0">
+        <!--when i remove the minimum scale the menu icon will not be in the scaled=1 sceen //to see it i have to zoom out-->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Inter:b|Oxygen:b|Oldenburg|Assistant">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -18,99 +20,80 @@
     <body>
         <!------------------------------------------- NAV BAR  ------------------------------------------------>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="mynavbar">
-            <div class="container">
               <a class="navbar-brand" href="#home"><img src="./images/logo.svg" style="height: 55px; width: 60px;"></a>
-              <!-- toggler is in case the screen Size is small i will have  menu icon that will show/hide the nav bar content-->
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#resume">Resume</a>
-                  </li>
-                    <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
-                  </li>
+                  <li class="nav-item active"><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+                  <li class="nav-item active"><a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a></li>
+                  <li class="nav-item active"><a class="nav-link" aria-current="page" href="#about">About</a></li>
+                  <li class="nav-item active"><a class="nav-link" aria-current="page" href="#resume">Resume</a></li>
+                  <li class="nav-item active"><a class="nav-link" aria-current="page" href="#contact">Contact</a></li>
                 </ul>
               </div>
-            </div>
           </nav>
           <!------------------------------------------- HOME SECTION ------------------------------------------------>
           <!--HERO & CAPTION & HIRE ME-->
-            <div class="jumbotron jumbotron-fluid hero_image" id="home">
-                <div class="container-fluid" style="position: absolute; top: 30%; width: 100%;">
-                  <div class="container">
-                    <div class="row mx-5">
-                      <div class="offset-xl-1 col-xl-6 offset-lg-2 col-lg-6 offset-md-0 col-md-12 offset-sm-0 col-sm-12 offset-xs-0 col-xs-12">
-                        <div> 
-                          <h2 style="font:48px Inter;color:black;text-transform:uppercase">Full Stack & Android Developer</h2>
-                          <p style="font:25px Inter;color:#161616;text-transform:capitalize">Ready to develop elegent websites/apps at best prices</p>
-                          <a href="#contact" class="btn btn-lg btn-primary" style="color:#161616; font-weight:bold">HIRE ME</a>
+            <div class="jumbotron-fluid hero_image" id="home">
+                    <div class="row" style="position: relative; top:30%">
+                        <div class="offset-xl-1 col-xl-6 offset-lg-3 col-lg-5 offset-md-1 col-md-6 offset-sm-1 col-sm-10 col-xs-10"> 
+                          <h2 class="hero-title">Full Stack & Android Developer</h2>
+                          <p class="hero-sub-title">Ready to develop elegent websites/apps at best prices</p>
+                          <a href="#contact" class="btn btn-lg btn-primary hireme-btn">HIRE ME</a>
                         </div>
-                      </div>
                     </div>
-                  </div>
-                </div>
             </div>
            <!------------------------------------------- SCROLL TO UP BUTTON------------------------------------------------>
            <a id="back-to-top" href="#" class="btn btn-light btn-sm back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
 
           <!------------------------------------------- PORTFOLIO SECTION------------------------------------------------>
-            <span id="portfolio"></span>
+          <span id="portfolio"></span>
+          <div class="container-fluid protofolio-section">
             <div class="portfolio"></div>
-            <div style="text-align: center;margin-top: 10px;font-size: 30px;margin-left:20px;margin-right: 20px;"> Here are a few design projects I've worked on recently. Want to see more? <a href="#contact"> lets chat</a></div>
-            <div class="container-fluid"style="margin-top:90px; margin-bottom:90px">
+            <div class="portfolio-sub-title"> Here are few projects I've worked on recently. Want to see more? <a href="#contact"> lets chat</a></div>
+            <div class="container-fluid"style="margin-top:90px;">
               <!-------------[  row 1 ]----------------->
-              <div class="row justify-content-center align-items-center mb-2">
-                <div class="mywork col-sm-4 mb-sm-2 col-md-8 col-lg-6 col-xl-5">
-                </div>
-                <div class="col-sm-8 mb-sm-2 col-md-8 col-lg-5 ml-lg-2 col-xl-5">
+              <div class="row justify-content-center align-items-center mb-2 ">
+                <div class="mywork col-xs-1 col-sm-10 mb-sm-2 col-md-10 col-lg-4 col-xl-5"></div>
+                <div class="col-xs-1 col-sm-12 offset-sm-1 mb-sm-2 col-md-10 offset-md-0 col-lg-5 ml-lg-2 col-xl-5">
                   <h1>this is the title</h1>
-                  <p style="font-size: 30px;">this the descrption about my application that i created for a purpose and is owned by a something company</p>
+                  <p style="font-size:30px;">this the descrption about my application that i created for a purpose and is owned by a something company</p>
                 </div>
               </div>
               <hr >
               <!-------------[  row 2 ]----------------->
               <div class="row justify-content-center align-items-center mb-2">
-                <div class="col-sm-8 mb-sm-2 col-md-8 col-lg-5 ml-lg-2 col-xl-5 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-xs-2">
+                <div class="col-xs-1 col-sm-12 offset-sm-1 mb-sm-2 col-md-10 offset-md-0 col-lg-5 ml-lg-2 col-xl-5 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-xs-2">
                   <h1>this is the title</h1>
                   <p style="font-size: 30px;">this the descrption about my application that i created for a purpose and is owned by a something company</p>
                 </div>
-                <div class="mywork col-sm-8 mb-sm-2 mt-sm-4 col-md-8 mt-md-4 col-lg-6 col-xl-5 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-xs-1">
+                <div class="mywork col-xs-1 col-sm-10 mb-sm-2 col-md-10 col-lg-4 col-xl-5 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-xs-1">
                 </div>
               </div>
               <hr >
               <!-------------[  row 3 ]----------------->
               <div class="row justify-content-center align-items-center mb-2">
-                <div class="mywork col-sm-8 mb-sm-2 mt-sm-4 col-md-8 mt-md-4 col-lg-6 col-xl-5">
-                </div>
-                <div class="col-sm-8 mb-sm-2 col-md-8 col-lg-5 ml-lg-2 col-xl-5">
+                <div class="mywork col-xs-1 col-sm-10 mb-sm-2  col-md-10 col-lg-4 col-xl-5"></div>
+                <div class="col-xs-1 col-sm-12 offset-sm-1 mb-sm-2 col-md-10 offset-md-0 col-lg-5 ml-lg-2 col-xl-5">
                   <h1>this is the title</h1>
-                  <p style="font-size: 30px;">this the descrption about my application that i created for a purpose and is owned by a something company</p>
+                  <p style="font-size:30px;">this the descrption about my application that i created for a purpose and is owned by a something company</p>
                 </div>
               </div>
               <hr >
               <!-------------[  row 4 ]----------------->
               <div class="row justify-content-center align-items-center mb-2">
-                <div class="col-sm-8 mb-sm-2 col-md-8 col-lg-5 ml-lg-2 col-xl-5 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-xs-2">
+                <div class="col-xs-1 col-sm-12 offset-sm-1 mb-sm-2 col-md-10 offset-md-0 col-lg-5 ml-lg-2 col-xl-5 order-xl-1 order-lg-1 order-md-2 order-sm-2 order-xs-2">
                   <h1>this is the title</h1>
                   <p style="font-size: 30px;">this the descrption about my application that i created for a purpose and is owned by a something company</p>
                 </div>
-                <div class="mywork col-sm-8 mb-sm-2 mt-sm-4 col-md-8 mt-md-4 col-lg-6 col-xl-5 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-xs-1">
+                <div class="mywork col-xs-1 col-sm-10 mb-sm-2 col-md-10 col-lg-4 col-xl-5 order-xl-2 order-lg-2 order-md-1 order-sm-1 order-xs-1">
                 </div>
               </div>
               <hr >
             </div>
-
+          </div>
           <!-------------------------------------------- ABOUT SECTION------------------------------------------------>
           <span id="about"></span>
           <div class="container">
@@ -134,7 +117,7 @@
             </div>
             <div class="container my-5">
                 <div class="row d-flex justify-content-around">
-                    <div class=" card shadow-lg mb-md-4 mb-sm-4 mb-lg-0  col-lg-3 col-md-8">
+                    <div class=" card shadow-lg mb-4  mb-md-4 mb-sm-4  mb-lg-0 col-lg-3 col-md-8">
                       <img class="card-img-top" src="https://bootstrapmade.com/demo/templates/Kelly/assets/img/testimonials/testimonials-1.jpg" alt="Card imag cap">
                       <div class="card-body">
                         <h5 class="card-title"style="text-align: center;">Saul Goodman</h5>
@@ -142,7 +125,7 @@
                         <p class="card-text">Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. </p>
                       </div>
                     </div>
-                  <div class="card shadow-lg mb-md-4 mb-sm-4 mb-lg-0  col-lg-3 col-md-8">
+                  <div class="card shadow-lg mb-4 mb-md-4 mb-sm-4 mb-lg-0 col-lg-3 col-md-8">
                     <img class="card-img-top" src="https://bootstrapmade.com/demo/templates/Kelly/assets/img/testimonials/testimonials-1.jpg" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title"style="text-align: center;">Saul Goodman</h5>
@@ -162,125 +145,128 @@
             </div> 
           </div> 
           <!------------------------------------------- CONTACT SECTION------------------------------------------------>
-          <div class="container-fluid" id="contact" >
-            <div class="row">
-              <div class="card col-12" style="width: 18rem;">
+          <div class="container-fluid" id="contact">
+            <div class="row justify-content-center ">
+              <div class="card shadow-lg col-11 col-md-9 col-lg-8 col-xl-8">
                 <div class="card-body">
-                  <h5 class="card-title" style="text-align: center; font-size: 48px;font-family: Oxygen;">Let's Get In Touch !</h5>
-                  <h6 class="card-subtitle mb-2 text-muted"style="text-align: center;">Let's start the conversation</h6>
-                  <p class="card-text"style="text-align:center;">Feel free to reach out for me for business or any question and i will try to help ASAP.</p>
-                  <!-----------------------------[THE CONTACT FORM ]-------------------------------->
-                    <div class="row d-flex justify-content-center">
-                      <div class="col-1 d-flex justify-content-center">
-                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                          <a class="nav-link active" id="v-pills-business-tab" data-toggle="pill" href="#v-pills-business" role="tab" aria-controls="v-pills-business" aria-selected="true">Project</a>
-                          <a class="nav-link" id="v-pills-questions-tab" data-toggle="pill" href="#v-pills-questions" role="tab" aria-controls="v-pills-questions" aria-selected="false">Question</a>
-                        </div>
-                      </div>
-                      <div class="col-5">
-                        <div class= "tab-content d-flex justify-content-center" id="v-pills-tabContent">
-                          <div class="tab-pane fade show active" id="v-pills-business" role="tabpanel" aria-labelledby="v-pills-business-tab">
-                            <!---------------------[ BUSINESS FORM]--------------------------->
-                            <form action="https://formspree.io/f/xzbkqzkq" method="POST"> 
-                              <div class="form-row">
-                              <div class=" col-6">
-                                <input type="text" class="form-control" placeholder="Name" name="_replyto">
-                              </div>
-                              <div class="col-6">
-                                <div class="input-group">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Email" required>
-                                  <div class="invalid-tooltip">
-                                    Please enter your email.
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-row mt-3">
-                              <div class="col-6 ">
-                                <div class="form-group">
-                                  <select id="inputState" class="form-control">
-                                    <option selected >Website</option>
-                                    <option>Android App</option>
-                                    <option>Android & Web App</option>
-                                  </select>
-                                </div>
-                              </div>
-                              <div class="col-6">
-                                <div class="input-group">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">$</span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Budget $" required>
-                                  <div class="invalid-tooltip">
-                                    Please Estimate the budget for the project.
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="row">
-                              <div class="form-group col-12">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50" placeholder="type here more detail if desired"></textarea>
-                              </div>
-                            </div>
-                            <div class="row"> 
-                              <div class="col d-flex justify-content-end">
-                              <button type="submit" class="btn btn-danger">Send</button>
-                              </div>
-                            </div>
-                            </form>
-                          </div>
-                          <div class="tab-pane fade" id="v-pills-questions" role="tabpanel" aria-labelledby="v-pills-questions-tab">
-                            <!---------------------[ QUESTIONS FORM]--------------------------->
-                            <form action="https://formspree.io/f/xzbkqzkq" method="POST"> 
-                            <div class="form-row">
-                              <div class=" col-6">
-                                <input type="text" class="form-control" placeholder="Name" name="_replyto">
-                              </div>
-                              <div class="col-6">
-                                <div class="input-group">
-                                  <div class="input-group-prepend">
-                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                                  </div>
-                                  <input type="text" class="form-control" placeholder="Email" required>
-                                  <div class="invalid-tooltip">
-                                    Please enter your email.
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group mt-3 col-12">
-                                <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="subject of the email" required>
-                              </div>
-                              <div class="invalid-tooltip">
-                                Please enter the subject of your email.
-                              </div>
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group  col-12">
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50" placeholder="type here your message" required></textarea>
-                              </div>
-                              <div class="invalid-tooltip">
-                                Can not send empty email.
-                              </div>
-                            </div>
-                            <div class="form-row"> 
-                              <div class="col d-flex justify-content-end">
-                              <button type="submit" class="btn btn-danger">Send</button>
-                              </div>
-                            </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
+                  <h5 class="card-title d-none d-sm-none d-md-block d-lg-block d-xl-block" style="text-align: center; font-size: 48px;font-family: Oxygen;">Let's Get In Touch !</h5>
+                  <p class="card-title d-block d-sm-block d-md-none d-lg-none d-xl-none" style="text-align: center; font-size: 30px;font-family: Oxygen;">Let's Get In Touch !</p>
+                  <h6 class="card-subtitle mb-2 text-muted d-none d-sm-none d-md-block d-lg-block d-xl-block"style="text-align: center;">Let's start the conversation</h6>
+                  <p class="card-text d-none d-sm-none d-md-block d-lg-block d-xl-block"style="text-align:center;">Feel free to reach out for me for business or any question and i will try to help ASAP.</p>
+                  <!-----------------------------[THE CONTACT FORM ]------------------------------->
+                  <div class="row d-flex justify-content-end" >
+                    <div class="col-12 d-flex justify-content-center mb-3">
+                      <nav>
+                        <span class=" nav nav-tabs" id="nav-tab" role="tablist">
+                          <a class="form-font nav-item nav-link active" id="nav-project-tab" data-toggle="tab" href="#nav-project" role="tab" aria-controls="nav-project" aria-selected="true">Project</a>
+                          <a class="form-font nav-item nav-link" id="nav-question-tab" data-toggle="tab" href="#nav-question" role="tab" aria-controls="nav-question" aria-selected="false">Question</a>
+                        </span>
+                      </nav>
                     </div>
-                </div>
-              </div>
-            </div>
-          </div> 
+                    <div class="col-12 d-flex justify-content-around">
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="nav-project" role="tabpanel" aria-labelledby="nav-project-tab">
+                        <!---------------------[ BUSINESS FORM ]-------------------------->
+                        <form action="https://formspree.io/f/xzbkqzkq" method="POST"> 
+                          <div class="form-row">
+                          <div class=" col-6">
+                            <input type="text" class="form-control" placeholder="Name" name="_replyto">
+                          </div>
+                          <div class="col-6">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Email" required>
+                              <div class="invalid-tooltip">
+                                Please enter your email.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-row mt-3">
+                          <div class="col-6 ">
+                            <div class="form-group">
+                              <select id="inputState" class="form-control">
+                                <option selected >Website</option>
+                                <option>Android App</option>
+                                <option>Android & Web App</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-6">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">$</span>
+                              </div>
+                              <input type="text" class="form-control" placeholder="Budget $" required>
+                              <div class="invalid-tooltip">
+                                Please Estimate the budget for the project.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col-12">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50" placeholder="type here more detail if desired"></textarea>
+                          </div>
+                        </div>
+                        <div class="row"> 
+                          <div class="col d-flex justify-content-end">
+                          <button type="submit" class="btn btn-danger">Submit</button>
+                          </div>
+                        </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="nav-question" role="tabpanel" aria-labelledby="nav-question-tab">
+                        <!---------------------[  QUESTIONS FORM ]-------------------------->
+                        <form action="https://formspree.io/f/xzbkqzkq" method="POST"> 
+                          <div class="form-row">
+                            <div class=" col-6">
+                              <input type="text" class="form-control" placeholder="Name" name="_replyto">
+                            </div>
+                            <div class="col-6">
+                              <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Email" required>
+                                <div class="invalid-tooltip">
+                                  Please enter your email.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group mt-3 col-12">
+                              <input type="text" class="form-control" id="exampleFormControlTextarea1" placeholder="subject of the email" required>
+                            </div>
+                            <div class="invalid-tooltip">
+                              Please enter the subject of your email.
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group  col-12">
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" cols="50" placeholder="type here your message" required></textarea>
+                            </div>
+                            <div class="invalid-tooltip">
+                              Can not send empty email.
+                            </div>
+                          </div>
+                          <div class="form-row"> 
+                            <div class="col d-flex justify-content-end">
+                            <button type="submit" class="btn btn-danger">Send</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div> <!--question tab-->
+                    </div>  <!--tab nav-->
+                    </div> <!--col-->
+                  </div> <!--row-->
+                </div> <!--card body-->
+              </div> <!--card -->
+            </div> <!--row -->
+          </div> <!--container --> 
           <!------------------------------------------- FOOTER SECTION------------------------------------------------>
           <footer class="container-fluid" id="footer">
             <div class="container my-4">
@@ -301,15 +287,15 @@
                 <div class="col-lg-3 col-md-10 col-sm-10 my-md-4 my-sm-4 footer_font">
                   <h4>Social Media</h4>
                   <div class=" container d-flex justify-content-center mt-3"> 
-                    <a href="mailto:shaimaakouka@gmail.com" target="_blank" class="social-icon mr-2"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/shaimaaK" target="_blank" class="social-icon mr-2"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/shaimaa-kouka-7a1181204/" target="_blank" class="social-icon mr-2"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:shaimaakouka@gmail.com" target="_blank" class="social-icon mr-2"><i class="fas fa-envelope icon"></i></a>
+                    <a href="https://github.com/shaimaaK" target="_blank" class="social-icon mr-2"><i class="fab fa-github icon"></i></a>
+                    <a href="https://www.linkedin.com/in/shaimaa-kouka-7a1181204/" target="_blank" class="social-icon mr-2"><i class="fab fa-linkedin-in icon"></i></a>
                     <a href="https://www.buymeacoffee.com/smmk" target="_blank" class="social-icon"><img src="./images/BMC Logo - Black.svg" height="20px" width= "20px"/></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="container footer_copyrights mb-2">Copyright &copy; 2021 <a href="#">Shaimaa Kouka</a></div>
+            <div class="container footer_copyrights mb-5">Copyright &copy; 2021 <a href="#">Shaimaa Kouka</a></div>
           </footer>
     </body>
 

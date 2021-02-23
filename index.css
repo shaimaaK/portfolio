@@ -1,22 +1,44 @@
 
-.nav-link , .navbar-brand{ color: #3a5250; cursor: pointer;}
+/*--------------[ nav bar section ]--------------------*/
 
-.nav-link{ margin-right: 1em !important;}
+.nav-link , .navbar-brand{ 
+  color: #3a5250; cursor: pointer;}
 
-.nav-link:hover{background-color: rgba(27, 28, 27, 0.067); color: #31aab8 }
-.navbar-toggler{  background:#fff !important;}
+.nav-link{ 
+  margin-right: 1em !important;}
+
+.nav-link:hover{
+  background-color: rgba(27, 28, 27, 0.067) !important; 
+  color: #31aab8 !important;
+}
+.navbar-toggler{  
+  background:#fff !important;}
 .nav-link{ 
     color:black;
     font-size: 19px;
     font-weight:bold;
     font-family: 'lato';
 } 
-.jumbotron.jumbotron-fluid.hero_image{
-    color: white; 
+/*--------------[ hero section ]--------------------*/
+.jumbotron-fluid.hero_image{
     background-image: url('https://images.unsplash.com/photo-1483470134942-13bbf4677d84?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
     background-position: center;
     background-size: cover;
-    height: 100vh
+    height: 100vh;
+}
+.hero-title{
+  font:45px Inter;
+  color:black;
+  text-transform:uppercase;
+}
+.hero-sub-title{
+  font:20px Inter;
+  color:#161616;
+  text-transform:capitalize;
+}
+.hireme-btn{
+  color:#161616; 
+  font-weight:bold;
 }
 /*--------------[ scroll to top button ]--------------------*/
 .back-to-top {
@@ -30,26 +52,38 @@
 .back-to-top:hover{
   border-color: rgb(49, 49, 49);
 }
-.mywork{
-  
-  height:310px;
-  background-image: url("./images/app1.png");
-  background-repeat:none;
-}
 /*--------------[ portfolio ]--------------------*/
 #portfolio{
   z-index:-50;
   padding:90px;
+}
+.protofolio-section{
+  margin-top:100px;
+  margin-bottom: 100px;
 }
 .portfolio{
   text-align:center;
   z-index:50;
 }
 .portfolio::after{
-  font: bold 55px Poppins;
+  font: bold 35px Poppins;
   text-align: center;
   content:"PORTFOLIO";
   border-bottom: 5px solid #31aab8;
+}
+.portfolio-sub-title{
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+  margin-left:20px;
+  margin-right: 20px;
+}
+.mywork{
+  height:300px;
+  background-image: url("./images/app1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
 }
 /*--------------[ about ]--------------------*/
   #about{
@@ -61,19 +95,18 @@
     z-index:50;
   }
   .about::after{
-    font: bold 55px Poppins;
+    font: bold 35px Poppins;
     text-align: center;
     content:"ABOUT";
     border-bottom: 5px solid #31aab8;
   }
   /*--------------[ testimonials ]--------------------*/
   .testimonials::after{
-    font: bold 55px Poppins;
+    font: bold 35px Poppins;
     text-align: center;
     content:"TESTIMONIALS";
     border-bottom: 5px solid #31aab8;
   }
-  
   .card-img-top{
       height:10rem;
       width:10rem;
@@ -84,11 +117,16 @@
   }
   /*--------------[ contact and portfolio ]--------------------*/
   #contact{
-    padding:100px;
+    z-index: -100;
+    padding-top: 100px;
+    padding-bottom:100px;
     background: #24C6DC;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+}
+.form-font{
+  font-size:15px;
+  font-weight: lighter;
 }
 /*--------------[ footer ]--------------------*/
 #footer{
@@ -99,6 +137,9 @@
 .footer_font{
 color:#ffffff;
 text-align: center;
+}
+.footer_font > h4{
+  color:#24C6DC;
 }
 .social-icon {
   display: inline-flex;
