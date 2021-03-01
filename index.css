@@ -85,11 +85,11 @@
   background-size:contain;
   background-repeat:no-repeat;
 }
-.mywork{
+.mywork2{
   height:300px;
-  background-image: url("./images/app1.png");
+  background-image: url("./images/iot\ project.png");
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat:no-repeat;
 }
 .mywork3{
