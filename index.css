@@ -78,9 +78,30 @@
   margin-left:20px;
   margin-right: 20px;
 }
+.mywork1{
+  height:300px;
+  background-image: url("./images/Lets\ Chat\ App.png");
+  background-position: center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
 .mywork{
   height:300px;
   background-image: url("./images/app1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+.mywork3{
+  height:300px;
+  background-image: url("./images/AI_project.jpg");
+  background-position: center;
+  background-size:contain;
+  background-repeat:no-repeat;
+}
+.mywork4{
+  height:300px;
+  background-image: url("./images/dataVisualization.jfif");
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
