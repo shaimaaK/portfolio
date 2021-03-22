@@ -55,11 +55,12 @@
 /*--------------[ portfolio ]--------------------*/
 #portfolio{
   z-index:-50;
-  padding:90px;
+  padding:20px;
 }
 .protofolio-section{
   margin-top:100px;
   margin-bottom: 100px;
+  
 }
 .portfolio{
   text-align:center;
