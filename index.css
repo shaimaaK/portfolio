@@ -79,6 +79,10 @@
   margin-left:20px;
   margin-right: 20px;
 }
+.card{
+  height: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.347);
+}
 .mywork1{
   height:300px;
   background-image: url("./images/Lets\ Chat\ App.png");
@@ -113,7 +117,25 @@
   background-position: center;
   background-size: cover;
   background-repeat:no-repeat;
+
 }
+/*------[ shields /tech-stack ]--------*/
+.react-shield,.tfjs-shield,.mui-shield,.html-shield,.css-shield,.js-shield,.pd-shield,.np-shield,.sklearn-shield,.sns-shield,
+.pyplot-shield,.keras-shield,.gensim-shield,.streamlit-shield,.matlab-shield,.unity-shield,.nodejs-shield,.ex-shield,.mongo-shield,
+.powerbi-shield{
+  padding:0px;
+	border-radius: 50px;
+  border: none;
+	text-align: center;
+}
+.react-shield:hover,.tfjs-shield:hover,.mui-shield:hover,.html-shield:hover,.css-shield:hover,.js-shield:hover,
+.pd-shield:hover,.np-shield:hover,.sklearn-shield:hover,.sns-shield:hover,.pyplot-shield:hover,.keras-shield:hover ,
+.gensim-shield:hover,.streamlit-shield:hover,.matlab-shield:hover,.unity-shield:hover,.nodejs-shield:hover,.ex-shield:hover,
+.mongo-shield:hover,.powerbi-shield:hover{
+  background-color: #aae7ee;
+}
+
+
 /*--------------[ about ]--------------------*/
   #about{
   z-index:-50;
@@ -136,14 +158,7 @@
     content:"TESTIMONIALS";
     border-bottom: 5px solid #31aab8;
   }
-  .card-img-top{
-      height:10rem;
-      width:10rem;
-      border-radius: 100%;  
-      margin-left: auto;
-      margin-right: auto;
 
-  }
   /*--------------[ contact and portfolio ]--------------------*/
   #contact{
     z-index: -100;
