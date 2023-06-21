@@ -83,41 +83,9 @@
   height: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.347);
 }
-.mywork1{
-  height:300px;
-  background-image: url("./images/Lets\ Chat\ App.png");
-  background-position: center;
-  background-size:contain;
-  background-repeat:no-repeat;
-}
-.mywork2{
-  height:300px;
-  background-image: url("./images/memRNN.jpg");
-  background-position: center;
-  background-size: contain;
-  background-repeat:no-repeat;
-}
-.mywork3{
-  height:300px;
-  background-image: url("./images/AI_project.jpg");
-  background-position: center;
-  background-size:contain;
-  background-repeat:no-repeat;
-}
-.mywork4{
-  height:300px;
-  background-image: url("./images/bakery.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
-}
-.mywork5{
-  height:300px;
-  background-image: url("./images/comingSoon.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat:no-repeat;
-
+.card-text{
+  text-align: justify;
+  text-justify: inter-word;
 }
 /*------[ shields /tech-stack ]--------*/
 .react-shield,.tfjs-shield,.mui-shield,.html-shield,.css-shield,.js-shield,.pd-shield,.np-shield,.sklearn-shield,.sns-shield,
